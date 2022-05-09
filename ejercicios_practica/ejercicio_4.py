@@ -53,5 +53,23 @@ if __name__ == '__main__':
     # Colocar una grilla a elección
 
     # Crear acá su gráfico
+    fig = plt.figure()
+    ax1 = fig.add_subplot(2,2,1)
+    ax2 = fig.add_subplot(2,2,2)
+    ax3 = fig.add_subplot(2,2,3)
+    ax4 = fig.add_subplot(2,2,4)
 
+    ax1.plot(x, y1, c="green", label='x^2')
+    ax1.legend()
+    ax1.grid(ls="dashed")
+    ax2.plot(x, y2, c="red", label='x^3')
+    ax2.legend()
+    ax2.grid(ls="dashdot")
+    ax3.plot(x, y3, c="blue", label='x^4')
+    ax3.legend()
+    ax3.grid(ls="none")
+    ax4.plot(x, y4, c="orange", label='raiz_cuadrada(X)')
+    ax4.legend()
+    ax4.grid(ls=":")
+    plt.show()
     print("terminamos")

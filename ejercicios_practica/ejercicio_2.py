@@ -45,5 +45,11 @@ if __name__ == '__main__':
     # a su elección
 
     # Crear acá su gráfico
+    fig = plt.figure()
+    ax = fig.add_subplot()
 
+    ax.plot(x, y1, label='y1 = x**2',c="blue")
+    ax.plot(x, y2, label='y2 = x**3', c="green")
+    ax.legend()
+    plt.show()
     print("terminamos")
